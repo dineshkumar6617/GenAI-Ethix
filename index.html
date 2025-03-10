@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Ethical Decision-Making</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>AI Ethical Decision-Making System</h1>
+        <p>Empowering AI with Transparency, Fairness, and Accountability.</p>
+    </header>
+
+    <section class="form-section">
+        <h2>Enter Your Scenario</h2>
+        <form id="decisionForm">
+            <label for="scenario">Describe the ethical dilemma:</label>
+            <textarea id="scenario" name="scenario" rows="4" placeholder="Type your scenario here..." required></textarea>
+            
+            <label for="priority">Select Ethical Priority:</label>
+            <select id="priority" name="priority">
+                <option value="utilitarianism">Utilitarianism (Maximize overall benefit)</option>
+                <option value="deontology">Deontology (Follow moral rules)</option>
+                <option value="virtue_ethics">Virtue Ethics (Focus on moral character)</option>
+            </select>
+
+            <button type="submit">Analyze Decision</button>
+        </form>
+    </section>
+
+    <section id="results" class="hidden">
+        <h2>AI Analysis Results</h2>
+        <p id="resultText">Processing...</p>
+    </section>
+
+    <footer>
+        <p>Powered by AI for Ethical Innovation.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
